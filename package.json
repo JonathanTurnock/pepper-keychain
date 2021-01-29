@@ -7,7 +7,7 @@
     "prettier": "prettier src -c",
     "prettier:fix": "prettier src -w",
     "build": "jsdoc2md src/**/* > API.md",
-    "ci": "yarn install && yarn prettier",
+    "ci": "yarn install && yarn prettier && cross-env CI=true yarn test",
     "test": "jest src --coverage"
   },
   "keywords": [
@@ -24,6 +24,7 @@
     "keytar": "^7.3.0"
   },
   "devDependencies": {
+    "cross-env": "^7.0.3",
     "husky": "^4.3.8",
     "jest": "^26.6.3",
     "jsdoc-to-markdown": "^6.0.1",

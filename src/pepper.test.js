@@ -1,3 +1,25 @@
+if (process.env.CI) {
+  console.log("Using Keytar Mock");
+  jest.mock("keytar", () => {
+    const passwords = new Map();
+
+    const getPassword = async (service, account) => {
+      return passwords.get(`${service}/${account}`);
+    };
+
+    const deletePassword = async (service, account) => {
+      return passwords.delete(`${service}/${account}`);
+    };
+
+    const setPassword = async (service, account, password) => {
+      return passwords.set(`${service}/${account}`, password);
+    };
+
+    return { getPassword, deletePassword, setPassword };
+  });
+} else {
+  console.log("Using OS Keychain");
+}
 const { createPepper, getPepper, deletePepper } = require("./pepper");
 
 describe("createPepper", () => {
