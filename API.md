@@ -17,7 +17,7 @@ account and passphrase, useful for securing individual items within the account 
 wanting to require a separate passphrase (or guaranteeing a user does not accidentally
 overwrite their existing pepper preventing them from accessing data.)</p>
 </dd>
-<dt><a href="#getPepper">getPepper(service, account, passphrase, id)</a> ⇒ <code>Promise.&lt;string&gt;</code></dt>
+<dt><a href="#getPepper">getPepper(service, account, passphrase, id)</a> ⇒ <code>Promise.&lt;(string|undefined)&gt;</code></dt>
 <dd><p>Retrieves the Pepper that has previously been created and stored.</p>
 </dd>
 <dt><a href="#deletePepper">deletePepper(service, account, passphrase, id)</a> ⇒ <code>Promise.&lt;boolean&gt;</code></dt>
@@ -65,7 +65,7 @@ const pepper = createPepper({
 ```
 <a name="getPepper"></a>
 
-## getPepper(service, account, passphrase, id) ⇒ <code>Promise.&lt;string&gt;</code>
+## getPepper(service, account, passphrase, id) ⇒ <code>Promise.&lt;(string\|undefined)&gt;</code>
 Retrieves the Pepper that has previously been created and stored.
 
 **Kind**: global function  
