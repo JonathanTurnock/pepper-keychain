@@ -39,7 +39,7 @@ but for some applications this additional layer is useful, hence this library ðŸ
 The Library exports simple functions `createPepper` and `getPepper` and `deletePepper` allowing crud
 operations on the peppers.
 
-See [API.md](API.md) for additional information on usage.
+See [API.md](https://github.com/JonathanTurnock/pepper-keychain/blob/main/API.md) for additional information on usage.
 
 ## Example
 
@@ -101,8 +101,8 @@ main();
 
 Peering Inside the Keychain the above example would produce the following KeyChain Entry
 
-![keychain.png](keychain.png)
-![pepper.png](pepper.png)
+![keychain.png](https://raw.githubusercontent.com/JonathanTurnock/pepper-keychain/main/keychain.png)
+![pepper.png](https://raw.githubusercontent.com/JonathanTurnock/pepper-keychain/main/pepper.png)
 
 ## Contributing
 

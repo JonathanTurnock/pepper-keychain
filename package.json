@@ -1,7 +1,9 @@
 {
   "name": "pepper-keychain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Simple API to create, query and delete passphrase peppers from the OS Keychain",
+  "homepage": "https://github.com/JonathanTurnock/pepper-keychain/blob/main/API.md",
+  "repository": "https://github.com/JonathanTurnock/pepper-keychain",
   "main": "src/pepper.js",
   "scripts": {
     "prettier": "prettier src -c",
